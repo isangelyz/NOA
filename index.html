@@ -601,7 +601,7 @@ h1,h2,h3,h4{font-family:'Cormorant',serif;font-weight:500;line-height:1.08;color
         <div class="hero-card hc-1"><div class="ph ph--vestidos"><svg viewBox="0 0 100 100"><path d="M35 20l15 8 15-8M35 20l-8 22 12 6M65 20l8 22-12 6M39 48l-6 32h34l-6-32"/></svg></div></div>
         <div class="hero-card hc-2"><div class="ph ph--buque"><svg viewBox="0 0 100 100"><circle cx="40" cy="34" r="9"/><circle cx="60" cy="30" r="9"/><circle cx="52" cy="48" r="9"/><path d="M45 55l6 30M57 52l-4 33M40 60l-8 24"/></svg></div></div>
         <div class="hero-card hc-3"><div class="ph ph--biquinis"><svg viewBox="0 0 100 100"><path d="M28 40q10 12 22 0M50 40q10 12 22 0M30 62q20 14 40 0"/></svg></div></div>
-        <div class="hero-badge"><strong>+300</strong><span>peças criadas com amor</span></div>
+        <div class="hero-badge"><span>Peças criadas com <strong>amor</strong></span></div>
       </div>
     </div>
   </div>
@@ -763,7 +763,7 @@ h1,h2,h3,h4{font-family:'Cormorant',serif;font-weight:500;line-height:1.08;color
             <ul class="sum-lines" id="sumLines"><li class="sum-empty">Comece escolhendo as flores.</li></ul>
             <div class="sum-total"><span class="t-label">Valor</span><span class="t-val" id="sumTotal">R$ 0</span></div>
             <p class="sum-prod">Produção: 5 dias úteis</p>
-            <button class="btn btn--primary btn--wide" id="addBouquet">🛒 Adicionar à sacola</button>
+            <button class="btn btn--primary btn--wide" id="addBouquet">Adicionar à sacola</button>
           </div>
         </aside>
       </div>
@@ -1324,7 +1324,7 @@ $("#addBouquet").addEventListener("click", ()=>{
   if(B.laco!=null) detalhe += ` · laço ${LACO_CORES[B.laco].nome}`;
   if(B.ref) detalhe += " · c/ foto de referência";
   addToCart({nome:"Buquê personalizado", detalhe, cor:B.cores.principal||"#f6a685", preco:t, qtd:1, cat:"buque", obs:B.obs});
-  if(B.ref) setTimeout(()=>toast("📷 Lembre de enviar sua foto de referência no WhatsApp!"), 2700);
+  if(B.ref) setTimeout(()=>toast("Lembre de enviar sua foto de referência no WhatsApp!"), 2700);
 });
 
 /* adicionar buquê pronto */
